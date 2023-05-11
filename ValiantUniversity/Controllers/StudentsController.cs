@@ -22,6 +22,18 @@ namespace ValiantUniversity.Controllers
         // GET: Students
         public async Task<IActionResult> Index()
         {
+            //try 
+            //{
+            //    //var y = 0;
+            //    //var x = 2 / y;
+            //    return View(await _context.Student.ToListAsync());
+            //}
+            //catch (Exception e)
+            //{
+            //    ViewBag.Error = e.Message;
+            //}
+            //return View("Error2");
+
             return View(await _context.Student.ToListAsync());
         }
 
